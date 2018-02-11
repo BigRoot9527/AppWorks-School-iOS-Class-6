@@ -100,6 +100,32 @@ repeat{
     count -= 2
 }while count >= 6
 
+// - If statement - //
 
+//1.
+var isRaining = "raining"
+if isRaining == "raining" {
+    print("It's \(isRaining). I don't want to work today.")
+}else{
+    print("Although It's \(isRaining).I still don't want to work today.")
+    
+}
 
+// - Switch -
 
+//1.
+var jobLevel = 66
+switch jobLevel {
+case 1:
+    print("Member")
+case 2:
+    print("Team Leader")
+case 3:
+    print("Manager")
+case 4:
+    print("Director")
+default:
+    print("We don't have this job")
+}
+
+////////
