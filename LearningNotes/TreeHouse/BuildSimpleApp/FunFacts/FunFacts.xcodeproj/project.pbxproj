@@ -12,6 +12,8 @@
 		3210882B20371C2500271B57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3210882920371C2500271B57 /* Main.storyboard */; };
 		3210882D20371C2500271B57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3210882C20371C2500271B57 /* Assets.xcassets */; };
 		3210883020371C2500271B57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3210882E20371C2500271B57 /* LaunchScreen.storyboard */; };
+		3210883820382AEB00271B57 /* FactProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3210883720382AEB00271B57 /* FactProvider.swift */; };
+		3210883A20389E5700271B57 /* BackgroudColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3210883920389E5700271B57 /* BackgroudColorProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		3210882C20371C2500271B57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3210882F20371C2500271B57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3210883120371C2500271B57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3210883720382AEB00271B57 /* FactProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactProvider.swift; sourceTree = "<group>"; };
+		3210883920389E5700271B57 /* BackgroudColorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroudColorProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				3210882520371C2500271B57 /* AppDelegate.swift */,
+				3210883720382AEB00271B57 /* FactProvider.swift */,
 				3210882720371C2500271B57 /* ViewController.swift */,
+				3210883920389E5700271B57 /* BackgroudColorProvider.swift */,
 				3210882920371C2500271B57 /* Main.storyboard */,
 				3210882C20371C2500271B57 /* Assets.xcassets */,
 				3210882E20371C2500271B57 /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			files = (
 				3210882820371C2500271B57 /* ViewController.swift in Sources */,
 				3210882620371C2500271B57 /* AppDelegate.swift in Sources */,
+				3210883820382AEB00271B57 /* FactProvider.swift in Sources */,
+				3210883A20389E5700271B57 /* BackgroudColorProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
