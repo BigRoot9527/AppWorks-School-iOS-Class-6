@@ -82,3 +82,79 @@ enum BarButton {
 let done = BarButton.done(title: "Save")
 let button = BarButton.done(title: "Save").button()
 
+
+//Raw Value(c.f. with associate value)
+//need to be all the same type
+//no custom tyep
+//Int raw value are auto incrementing (first will be 0 if all rawvalue are unset)
+//String raw value are "case name" by default
+
+enum Coin : Double {
+    case penny = 0.01
+    case nickel = 0.05
+    case dime = 0.1
+    case quarter = 0.25
+}
+
+let coins: [Coin] = [.penny, .nickel, .quarter, .dime, .dime, .penny, .quarter, .dime]
+
+func sum(having coins:[Coin]) -> Double{
+    var total: Double = 0
+    for coin in coins{
+        total += coin.rawValue
+    }
+    return total
+}
+
+sum(having: coins)
+
+//
+
+enum TestRawInt : Int {
+    case one = 1
+    case two
+    case three
+    case four
+    case five
+}
+
+TestRawInt.four.rawValue
+
+enum TestRawString : String {
+    case father
+    case mother
+    case brother
+    case sister
+}
+
+TestRawString.mother.rawValue
+
+//
+// initialize with enum
+
+enum HttpStatus: Int {
+    case notFound = 404
+    case success = 200
+    case forbidden = 403
+    case unauthorize = 401
+}
+
+let statusCode = 200
+
+//httpStatusCode is String?
+if let httpStatusCode = HttpStatus(rawValue: statusCode){
+    print (httpStatusCode) }
+
+
+//
+//
+
+enum Compass: Int {
+    case north
+    case south
+    case east
+    case west
+}
+
+let direction = Compass(rawValue: 1)
+
