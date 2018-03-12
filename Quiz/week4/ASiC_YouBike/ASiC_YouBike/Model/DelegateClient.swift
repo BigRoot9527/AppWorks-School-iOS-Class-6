@@ -20,7 +20,7 @@ protocol DelegateClientProtocol: class {
 
 struct DelegateClient {
     
-    weak var delegate: DelegateClientProtocol?
+    weak var delegate: DelegateClientProtocol? //YouBikeViewController? also works (because of the same type, but 通用性(by protocol) will decrease)
     
     func loadData() {
         

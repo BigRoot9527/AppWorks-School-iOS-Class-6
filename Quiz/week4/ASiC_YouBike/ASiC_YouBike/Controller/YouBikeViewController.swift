@@ -18,7 +18,7 @@ protocol StationInfo {
     var remainBikes: String { get }
 }
 
-class YouBikeViewController: UIViewController, DelegateClientProtocol {
+class YouBikeViewController: UIViewController, DelegateClientProtocol /* DelegateClientProtocol is conformed protocol, swift only can inherit from One class (UIViewController) */{
 
     @IBOutlet weak var stationName: UILabel!
     @IBOutlet weak var stationAdress: UILabel!
@@ -33,7 +33,7 @@ class YouBikeViewController: UIViewController, DelegateClientProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        delegateClient.delegate = self
+        delegateClient.delegate = self //self = instance of class
         delegateClient.loadData()
         
         closureClient.getDataFromFile { (annotation) in
